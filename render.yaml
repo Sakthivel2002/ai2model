@@ -2,12 +2,11 @@ services:
   - type: web
     name: ai2model
     env: python
-    plan: free
     buildCommand: |
       pip install --upgrade pip
       pip install -r requirements.txt
       git clone https://github.com/microsoft/TRELLIS.git
-      pip install ./TRELLIS
+      pip install easydict imageio scipy rembg opencv-python
     startCommand: python app.py
     envVars:
       - key: PYTHON_VERSION
