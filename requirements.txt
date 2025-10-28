@@ -82,11 +82,11 @@ urllib3==2.2.3
 watchdog==4.0.1
 easydict
 imageio
-trellis==0.3.0
 scipy
 rembg
 opencv-python
 Werkzeug==3.0.4
+
 
 
 
