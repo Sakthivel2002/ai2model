@@ -88,9 +88,6 @@ rembg
 opencv-python
 Werkzeug==3.0.4
 
-# --- TRELLIS from Microsoft GitHub (zip install, avoids git auth) ---
-https://github.com/microsoft/TRELLIS/archive/refs/heads/main.zip
-
 
 
 
