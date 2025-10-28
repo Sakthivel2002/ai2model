@@ -3,10 +3,12 @@ services:
     name: ai2model
     env: python
     plan: free
+    region: oregon
     buildCommand: |
-      pip install --upgrade pip
-      pip install -r requirements.txt
-      git clone https://github.com/microsoft/TRELLIS.git
+      apt-get update && apt-get install -y git && \
+      pip install --upgrade pip && \
+      pip install -r requirements.txt && \
+      git clone https://github.com/microsoft/TRELLIS.git && \
       pip install ./TRELLIS
     startCommand: python app.py
     envVars:
