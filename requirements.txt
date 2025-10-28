@@ -86,7 +86,11 @@ trellis==0.3.0
 scipy
 rembg
 opencv-python
-git+https://github.com/JeffreyXiang/TRELLIS.git
 Werkzeug==3.0.4
+
+# --- TRELLIS from Microsoft GitHub (zip install, avoids git auth) ---
+https://github.com/microsoft/TRELLIS/archive/refs/heads/main.zip
+
+
 
 
